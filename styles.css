@@ -1,15 +1,9 @@
-
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-
-/* =========================
-   FONTES
-========================= */
 @font-face {
   font-family: 'Juana-extra';
   src: url('./font/Fontspring-DEMO-juana-extralightit.otf') format('truetype');
@@ -17,30 +11,22 @@
   font-style: normal;
 }
 
-
-
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 90px 10px 40px; /* mais fina */
-
-  /* Imagem apenas na navbar */
+  padding: 10px 90px 10px 40px;
   background-image: url('../img/SATURNO-ZOOM_LE_upscale_balanced_x4 2.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-
-  /* Linha branca na borda inferior */
   border-bottom: 1px solid white;
-
   position: relative;
   z-index: 100;
 }
 
-/* Continuação da imagem abaixo da navbar */
 .navbar-image-continuation {
-  height: 190px; /* ajuste a altura conforme desejar */
+  height: 190px;
   background-image: url('../img/SATURNO-ZOOM_LE_upscale_balanced_x4 2.png');
   background-size: cover;
   background-position: center;
@@ -137,52 +123,47 @@
   background: rgba(255,255,255,0.1);
 }
 
-
-/* hero main */
 .hero-main-title {
   padding-top: 70px;
   font-family: 'Juana-extra', sans-serif;
   font-weight: 280;
-  font-style: normal; /* Regular no Figma */
+  font-style: normal;
   font-size: 70px;
   line-height: 0px;
   letter-spacing: 0%;
   vertical-align: middle;
-  color: #ffffff; /* contraste com a imagem */
-  text-align: center; /* centraliza horizontalmente */
-  margin: 0 auto 50px auto; /* centraliza e adiciona espaçamento inferior */
+  color: #ffffff;
+  text-align: center;
+  margin: 0 auto 50px auto;
 }
 
 .hero-desc {
   font-family: 'Juana-extra', sans-serif;
-  font-weight: 0; /* Light */
-  font-style: normal; /* Light é considerado normal */
+  font-weight: 100;
+  font-style: normal;
   font-size: 22px;
   line-height: 29px;
   letter-spacing: 0%;
   vertical-align: middle;
-  color: #ffffff; /* contraste com a imagem de fundo */
-  text-align: center; /* centralizado horizontalmente */
-  margin-top: 20px; /* espaçamento em relação ao título */
+  color: #ffffff;
+  text-align: center;
+  margin-top: 20px;
 }
-
 
 body {
   font-family: 'Juana-extra', sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: #333; /* cor padrão do texto */
-  background-color: #E6D6B8; /* Baby Fawn OC-15 */
+  color: #333;
+  background-color: #E6D6B8;
 }
 
-
-/* segunda seção */
 .mysteries-section {
   padding: 80px 40px;
   display: flex;
   justify-content: center;
-  background-color: #E6D6B8; /* Baby Fawn */
+  background-color: #E6D6B8;
 }
 
 .section-content {
@@ -193,7 +174,6 @@ body {
   width: 100%;
 }
 
-/* TEXTO À ESQUERDA */
 .text-left {
   flex: 1;
 }
@@ -215,7 +195,6 @@ body {
   color: #333;
 }
 
-/* IMAGENS À DIREITA - retângulos sobrepostos */
 .images-right {
   flex: 1;
   position: relative;
@@ -231,56 +210,46 @@ body {
   box-shadow: 0 8px 20px rgba(0,0,0,0.2);
 }
 
-/* Retângulo superior */
-/* Retângulo superior */
 .rect-top {
-  background-color: #807C76; /* cinza médio */
-  top: -120px;   /* sobe um pouco acima do contêiner */
-  left: 150px;   /* desloca mais para a direita */
+  background-color: #807C76;
+  top: -120px;
+  left: 150px;
   z-index: 1;
 }
 
-/* Retângulo central */
 .rect-middle {
-  background-color: #4B4845; /* cinza escuro */
-  top: 10px;   /* afasta mais para baixo */
-  left: 40px;  /* desloca levemente para a esquerda */
+  background-color: #4B4845;
+  top: 10px;
+  left: 40px;
   z-index: 2;
 }
 
-/* Retângulo inferior */
 .rect-bottom {
-  background-color: #807C76; /* cinza médio */
-  top: 180px;  /* afasta mais para baixo */
-  left: 150px;  /* desloca mais para a direita */
+  background-color: #807C76;
+  top: 180px;
+  left: 150px;
   z-index: 3;
 }
 
-
-
-/* itens decorativos */
 .decorative-squares {
   display: flex;
-  gap: 0; /* quadrados grudados */
-  margin-top: 40px; /* espaço abaixo do parágrafo */
+  gap: 0;
+  margin-top: 40px;
 }
 
 .square {
-  width: 80px;   /* ajuste o tamanho conforme desejar */
+  width: 80px;
   height: 80px;
   background-color: transparent;
-  border: 1px solid rgba(0, 0, 0, 0.2); /* borda sutil */
+  border: 1px solid rgba(0, 0, 0, 0.2);
 }
 
-
-/* SEÇÃO TEORIAS */
 .theories-section {
   padding: 80px 40px;
-  background-color: #E6D6B8;  
-  padding-bottom: 120px; 
+  background-color: #E6D6B8;
+  padding-bottom: 120px;
 }
 
-/* Título e risco */
 .section-header {
   display: flex;
   flex-direction: column;
@@ -296,24 +265,23 @@ body {
 }
 
 .underline {
-  width: 100%; /* comprimento do risco */
+  width: 100%;
   height: 2px;
   background-color: #333;
   margin-top: 10px;
 }
 
-/* CARDS CONTAINER */
 .cards-container {
   display: flex;
-  gap: 20px; /* espaçamento entre os cards */
+  gap: 20px;
   justify-content: center;
-  flex-wrap: nowrap; /* força todos na mesma linha */
+  flex-wrap: nowrap;
 }
 
 .card {
-  flex: 1 1 0;        /* flexível para ocupar o espaço disponível */
-  max-width: 327px;    /* tamanho máximo conforme Figma */
-  min-width: 300px;    /* tamanho mínimo para não ficar muito pequeno */
+  flex: 1 1 0;
+  max-width: 327px;
+  min-width: 300px;
   height: 400px;
   background-color: #4B4845;
   position: relative;
@@ -321,14 +289,14 @@ body {
 }
 
 .card-img {
-  width: 290px;        /* conforme Figma */
-  height: 173px;       /* conforme Figma */
+  width: 290px;
+  height: 173px;
   display: block;
   position: absolute;
-  top: 80px;           /* ajusta para ficar acima do meio */
-  left: 50%;           /* centraliza horizontalmente */
-  transform: translateX(-50%); /* corrige o deslocamento horizontal */
-  object-fit: contain; /* mantém proporção */
+  top: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  object-fit: contain;
 }
 
 .card-overlay {
@@ -336,7 +304,7 @@ body {
   height: 260px;
   background-color: #fff;
   position: absolute;
-  top: 280px; /* ajuste conforme desejado */
+  top: 280px;
   left: 35px;
   border-radius: 4px;
 }
@@ -360,21 +328,19 @@ body {
   font-family: 'Juana-extra', sans-serif;
   font-size: 16px;
   font-weight: 400;
-  text-decoration: none; /* remove o sublinhado */
+  text-decoration: none;
   text-align: center;
   justify-content: center;
   transition: background 0.3s ease;
-
   position: absolute;
   bottom: 20px;  
   left: 20px; 
 }
 
 .botaowikipedia {
-  background-color: #807c767e; /* cinza mais claro no hover */
+  background-color: #807c767e;
 }
 
-/* Seção misterios */
 .misterios-section {
   padding: 80px 40px;
   background-color: #E6D6B8;  
