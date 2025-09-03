@@ -276,7 +276,8 @@ body {
 /* SEÇÃO TEORIAS */
 .theories-section {
   padding: 80px 40px;
-  background-color: #E6D6B8; 
+  background-color: #E6D6B8;  
+  padding-bottom: 120px; 
 }
 
 /* Título e risco */
@@ -335,7 +336,7 @@ body {
   height: 260px;
   background-color: #fff;
   position: absolute;
-  top: 350px; /* ajuste conforme desejado */
+  top: 280px; /* ajuste conforme desejado */
   left: 35px;
   border-radius: 4px;
 }
@@ -365,10 +366,17 @@ body {
   transition: background 0.3s ease;
 
   position: absolute;
-  bottom: 0px;  
+  bottom: 20px;  
   left: 20px; 
 }
 
 .botaowikipedia {
   background-color: #807c767e; /* cinza mais claro no hover */
+}
+
+/* Seção misterios */
+.misterios-section {
+  padding: 80px 40px;
+  background-color: #E6D6B8;  
+  padding-bottom: 220px; 
 }
