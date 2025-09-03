@@ -1,3 +1,5 @@
+
+
 * {
   margin: 0;
   padding: 0;
@@ -14,6 +16,7 @@
   font-weight: normal;
   font-style: normal;
 }
+
 
 
 .navbar {
@@ -161,4 +164,110 @@
   color: #ffffff; /* contraste com a imagem de fundo */
   text-align: center; /* centralizado horizontalmente */
   margin-top: 20px; /* espaçamento em relação ao título */
+}
+
+
+body {
+  font-family: 'Juana-extra', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #333; /* cor padrão do texto */
+  background-color: #E6D6B8; /* Baby Fawn OC-15 */
+}
+
+
+/* segunda seção */
+.mysteries-section {
+  padding: 80px 40px;
+  display: flex;
+  justify-content: center;
+  background-color: #E6D6B8; /* Baby Fawn */
+}
+
+.section-content {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  max-width: 1200px;
+  width: 100%;
+}
+
+/* TEXTO À ESQUERDA */
+.text-left {
+  flex: 1;
+}
+
+.section-title {
+  font-family: 'Juana-extra', sans-serif;
+  font-weight: 280;
+  font-size: 48px;
+  line-height: 56px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.section-desc {
+  font-family: 'Juana-extra', sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 36px;
+  color: #333;
+}
+
+/* IMAGENS À DIREITA - retângulos sobrepostos */
+.images-right {
+  flex: 1;
+  position: relative;
+  width: 250px;
+  height: 250px;
+}
+
+.rect {
+  position: absolute;
+  width: 441px;
+  height: 250px;
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* Retângulo superior */
+/* Retângulo superior */
+.rect-top {
+  background-color: #807C76; /* cinza médio */
+  top: -120px;   /* sobe um pouco acima do contêiner */
+  left: 150px;   /* desloca mais para a direita */
+  z-index: 1;
+}
+
+/* Retângulo central */
+.rect-middle {
+  background-color: #4B4845; /* cinza escuro */
+  top: 10px;   /* afasta mais para baixo */
+  left: 40px;  /* desloca levemente para a esquerda */
+  z-index: 2;
+}
+
+/* Retângulo inferior */
+.rect-bottom {
+  background-color: #807C76; /* cinza médio */
+  top: 180px;  /* afasta mais para baixo */
+  left: 150px;  /* desloca mais para a direita */
+  z-index: 3;
+}
+
+
+
+/* itens decorativos */
+.decorative-squares {
+  display: flex;
+  gap: 0; /* quadrados grudados */
+  margin-top: 40px; /* espaço abaixo do parágrafo */
+}
+
+.square {
+  width: 80px;   /* ajuste o tamanho conforme desejar */
+  height: 80px;
+  background-color: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.2); /* borda sutil */
 }
