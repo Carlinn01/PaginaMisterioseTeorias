@@ -305,23 +305,22 @@ body {
 .cards-container {
   display: flex;
   gap: 20px; /* espaçamento entre os cards */
-  justify-content: flex-start;
+  justify-content: center;
   flex-wrap: nowrap; /* força todos na mesma linha */
 }
 
 .card {
   flex: 1 1 0;        /* flexível para ocupar o espaço disponível */
-  max-width: 427px;    /* tamanho máximo conforme Figma */
+  max-width: 327px;    /* tamanho máximo conforme Figma */
   min-width: 300px;    /* tamanho mínimo para não ficar muito pequeno */
-  height: 450px;
-  background-color: #A9A9A9;
-  border-radius: 8px;
+  height: 400px;
+  background-color: #4B4845;
   position: relative;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .card-img {
-  width: 330px;        /* conforme Figma */
+  width: 290px;        /* conforme Figma */
   height: 173px;       /* conforme Figma */
   display: block;
   position: absolute;
@@ -332,11 +331,44 @@ body {
 }
 
 .card-overlay {
-  width: 100px;
-  height: 100px;
+  width: 260px;
+  height: 260px;
   background-color: #fff;
   position: absolute;
-  top: 150px; /* ajuste conforme desejado */
-  left: 20px;
+  top: 350px; /* ajuste conforme desejado */
+  left: 35px;
   border-radius: 4px;
+}
+
+.card-overlay h1{
+  padding-top: 20px;
+  text-align: center;
+}
+
+.card-overlay p{
+  text-align: center;
+  padding-top: 40px;
+  justify-content: center;
+}
+
+.botaowikipedia {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #807C76; 
+  color: #fff;
+  font-family: 'Juana-extra', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none; /* remove o sublinhado */
+  text-align: center;
+  justify-content: center;
+  transition: background 0.3s ease;
+
+  position: absolute;
+  bottom: 0px;  
+  left: 20px; 
+}
+
+.botaowikipedia {
+  background-color: #807c767e; /* cinza mais claro no hover */
 }
